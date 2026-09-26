@@ -1,0 +1,26 @@
+{
+  "name": "BRAILLE UP! - TCC",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "npm run setup",
+  "forwardPorts": [5173, 3000],
+  "portsAttributes": {
+    "5173": {
+      "label": "BRAILLE UP! - Front-end",
+      "onAutoForward": "openBrowser"
+    },
+    "3000": {
+      "label": "BRAILLE UP! - API",
+      "onAutoForward": "silent"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
