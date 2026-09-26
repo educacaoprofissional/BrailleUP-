@@ -1,0 +1,16 @@
+{
+  "name": "braille-up",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BRAILLE UP! - projeto educacional acessível com React e Node.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "npm install --prefix projeto/backend --no-audit --no-fund && npm install --prefix projeto/frontend --no-audit --no-fund",
+    "start": "bash scripts/start.sh",
+    "start:backend": "npm run start --prefix projeto/backend",
+    "start:frontend": "npm run start --prefix projeto/frontend",
+    "build": "npm run build --prefix projeto/frontend"
+  }
+}

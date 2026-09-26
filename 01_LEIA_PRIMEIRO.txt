@@ -1,0 +1,24 @@
+BRAILLE UP! - COMO EXECUTAR NO GITHUB CODESPACES
+
+1. Suba O CONTEUDO desta pasta para a raiz do repositorio da equipe.
+2. No GitHub: Code > Codespaces > Create codespace on main.
+3. Aguarde a instalacao automatica das dependencias.
+4. No terminal, execute:
+
+   npm start
+
+5. O projeto inicia dois servicos:
+   - Front-end React/Vite: porta 5173
+   - Back-end Node/Express: porta 3000
+
+6. Abra PORTS > 5173 > Open in Browser.
+
+Se as dependencias nao forem instaladas automaticamente:
+
+   npm run setup
+   npm start
+
+IMPORTANTE:
+- Nao envie node_modules ao GitHub.
+- O front-end depende do back-end para responder /api/mensagem.
+- Para apresentar no Codespaces, mantenha o terminal do npm start aberto.
